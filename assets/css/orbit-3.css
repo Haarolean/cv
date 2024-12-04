@@ -343,6 +343,11 @@ p {
   display: inline-block;
 }
 
+.main-wrapper .projects-section .project-title .star .star-symbol {
+  color: rgb(218, 170, 63);
+}
+
 .main-wrapper .projects-section .project-title a {
   font-size: 18px;
+  text-decoration: underline;
 }
