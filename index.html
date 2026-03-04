@@ -1,278 +1,450 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <title>Roman Zabaluev | CV</title>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <meta
+         name="description"
+         content="Roman Zabaluev | CV" />
+      <link href="assets/css/styles.css" rel="stylesheet" />
+      <script
+         defer
+         src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+      <title>Roman Zabaluev | CV</title>
+      <style>
+         @media print {
+            body { background: white; font-size: 11px; }
+            .no-print { display: none !important; }
+            .grid { display: block !important; }
+            .lg\:col-span-2 { width: 100% !important; }
+            .sticky { position: static !important; }
+            .rounded-xl, .rounded-md { border-radius: 0 !important; }
+            .bg-gray-50, .bg-gray-100 { background: white !important; }
+            .shadow-sm { box-shadow: none !important; }
+            .hover\:bg-gray-100:hover { background: white !important; }
+            .space-y-4 > * + * { margin-top: 0.75rem !important; }
+            .my-4 { margin: 0 !important; }
+            .px-4 { padding-left: 0 !important; padding-right: 0 !important; }
+            [x-show="tab === 'projects'"] { display: block !important; }
+            [x-show="tab === 'experience'"] { display: block !important; }
+         }
+      </style>
+   </head>
+   <body class="bg-gray-100 text-sm antialiased">
+      <div class="mx-auto my-4 max-w-xl px-4 lg:max-w-5xl">
+         <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+            <!-- SIDEBAR -->
+            <div class="space-y-4">
+               <!-- USER -->
+               <div class="overflow-hidden rounded-xl bg-white">
+                  <div class="aspect-h-2 aspect-w-3 overflow-hidden no-print">
+                     <img
+                        src="assets/images/cover.jpg"
+                        alt=""
+                        class="object-cover object-center" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Roman Zabaluev | CV">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-    <link rel="shortcut icon" href="favicon.ico">
+<!--
+                     <div
+                        class="flex items-end bg-gradient-to-t from-white p-4">
+                        <img
+                           src="./assets/images/photo.jpg"
+                           alt=""
+                           class="size-20 rounded-full border-2 border-white object-cover object-center shadow-sm" />
+                     </div>
+-->
+                  </div>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+                  <div class="space-y-4 p-1.5">
+                     <div class="px-4">
+                        <h3
+                           class="flex items-center gap-x-2 text-base font-medium">
+                           Roman Zabaluev
+                        </h3>
 
-	<script defer src="assets/fontawesome/js/all.min.js"></script>
+                        <div class="mt-1 flex items-center gap-x-2">
+                           <p>Software Engineer</p>
+                           <svg
+                              viewBox="0 0 2 2"
+                              width="3"
+                              height="3"
+                              aria-hidden="true"
+                              class="fill-gray-900">
+                              <circle cx="1" cy="1" r="1" />
+                           </svg>
+                           <p>Open Source</p>
+                        </div>
+                     </div>
 
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+                     <div class="no-print space-y-4 rounded-md bg-gray-50 p-4">
+                        <a
+                           href="#"
+                           onclick="window.print(); return false;"
+                           class="inline-flex w-full items-center justify-center gap-x-4 rounded-md bg-blue-600 px-4 py-2.5 font-medium text-white duration-150 hover:bg-blue-700"
+                           >Download PDF
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              class="size-4">
+                              <path
+                                 fill="currentColor"
+                                 d="M13 10h5l-6 6l-6-6h5V3h2zm-9 9h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2z" /></svg
+                        ></a>
+                     </div>
+                  </div>
+               </div>
+               <!--// USER -->
 
-    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-3.css">
-</head>
+               <!-- LINKS -->
+               <div class="rounded-xl bg-white p-1.5">
+                  <h2
+                     class="flex items-center gap-x-2.5 px-4 pt-2.5 text-base font-medium before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-600">
+                     Links
+                  </h2>
 
-<body>
-    <div class="wrapper mt-lg-5">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <!--<img class="profile" src="assets/images/profile.png" alt="" />-->
-                <h1 class="name">Roman Zabaluev</h1>
-                <h3 class="tagline">Software Engineer</h3>
+                  <div class="mt-4 rounded-md bg-gray-50 p-4">
+                     <div class="space-y-4">
+                        <a
+                           href="https://haarolean.dev"
+                           target="_blank"
+                           class="group flex items-center gap-x-2">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              class="size-4">
+                              <path
+                                 fill="currentColor"
+                                 d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm11-3v8h-2V6.413l-7.793 7.794l-1.414-1.414L17.585 5H13V3z" />
+                           </svg>
+                           <span
+                              class="font-medium group-hover:underline group-hover:underline-offset-4">
+                              haarolean.dev
+                           </span>
+                        </a>
+
+                        <a
+                           href="mailto:cv25@haarolean.dev"
+                           class="group flex items-center gap-x-2">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              class="size-4">
+                              <path
+                                 fill="currentColor"
+                                 d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m17 4.238l-7.928 7.1L4 7.216V19h16zM4.511 5l7.55 6.662L19.502 5z" />
+                           </svg>
+                           <span
+                              class="font-medium group-hover:underline group-hover:underline-offset-4">
+                              cv25@haarolean.dev
+                           </span>
+                        </a>
+
+                        <a
+                           href="https://linkedin.com/in/haarolean/"
+                           target="_blank"
+                           class="group flex items-center gap-x-2">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              class="size-4">
+                              <path
+                                 fill="currentColor"
+                                 d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+                           </svg>
+                           <span
+                              class="font-medium group-hover:underline group-hover:underline-offset-4">
+                              LinkedIn
+                           </span>
+                        </a>
+
+                        <a
+                           href="https://github.com/haarolean"
+                           target="_blank"
+                           class="group flex items-center gap-x-2">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              class="size-4">
+                              <path
+                                 fill="currentColor"
+                                 d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.338 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.28 9.28 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.912-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10" />
+                           </svg>
+                           <span
+                              class="font-medium group-hover:underline group-hover:underline-offset-4">
+                              GitHub
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!--// LINKS -->
+
+               <!-- INFORMATION -->
+               <div class="rounded-xl bg-white p-1.5">
+                  <h2
+                     class="flex items-center gap-x-2.5 px-4 pt-2.5 text-base font-medium before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-600">
+                     Information
+                  </h2>
+
+                  <div class="mt-4 rounded-md bg-gray-50 p-4">
+                     <ul x-data="details" class="-my-2.5">
+                        <template x-for="item in details">
+                           <li
+                              class="flex gap-x-4 border-b py-2.5 last:border-b-0">
+                              <span
+                                 class="text-gray-600"
+                                 style="min-width: 5.5rem"
+                                 x-text="item.label"></span
+                              ><span x-text="item.value"></span>
+                           </li>
+                        </template>
+                     </ul>
+                  </div>
+               </div>
+               <!--// INFORMATION -->
+
+               <!-- LANGUAGES -->
+               <div class="rounded-xl bg-white p-1.5">
+                  <h2
+                     class="flex items-center gap-x-2.5 px-4 pt-2.5 text-base font-medium before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-600">
+                     Languages
+                  </h2>
+
+                  <div class="mt-4 rounded-md bg-gray-50 p-4">
+                     <ul x-data="languages" class="-my-2.5">
+                        <template x-for="item in languages">
+                           <li
+                              class="flex justify-between gap-x-4 border-b py-2.5 last:border-b-0">
+                              <span
+                                 class="text-gray-600"
+                                 x-text="item.name"></span
+                              ><span x-text="item.level"></span>
+                           </li>
+                        </template>
+                     </ul>
+                  </div>
+               </div>
+               <!--// LANGUAGES -->
             </div>
+            <!-- // SIDEBAR -->
 
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: cv25@haarolean.dev">cv25@haarolean.dev</a></li>
-                    <!--<li class="phone"><i class="fa-solid fa-phone"></i><a href="tel:0123 456 789">0123 456 789</a></li>-->
-                    <li class="website"><i class="fa-solid fa-globe"></i><a href="https://haarolean.dev" target="_blank">haarolean.dev</a></li>
-                    <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i><a href="https://linkedin.com/in/haarolean/" target="_blank">haarolean</a></li>
-                    <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/haarolean" target="_blank">haarolean</a></li>
-                    <li class="twitter"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/haarolean" target="_blank">@haarolean</a></li>
-                </ul>
+            <div class="space-y-4 lg:col-span-2">
+               <!-- ABOUT -->
+               <div class="rounded-xl bg-white p-1.5">
+                  <h2
+                     class="flex items-center gap-x-2.5 px-4 pt-2.5 text-base font-medium before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-600">
+                     About me
+                  </h2>
+
+                  <div class="mt-4 space-y-4 rounded-md bg-gray-50" style="padding: 28px 32px 24px">
+                     <div class="prose prose-sm prose-gray text-gray-600">
+                        <p>
+                           Senior backend engineer and open-source maintainer.
+                           Built kafka-ui (10k+ stars) and now maintain its
+                           successor Kafbat. 8 years delivering backend systems
+                           across fintech, payments, and distributed
+                           systems — currently consulting while running
+                           the Kafbat community.
+                        </p>
+                     </div>
+
+                  </div>
+               </div>
+               <!--// ABOUT -->
+
+               <!-- SKILLS -->
+               <div class="rounded-xl bg-white p-1.5">
+                  <h2
+                     class="flex items-center gap-x-2.5 px-4 pt-2.5 text-base font-medium before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-600">
+                     Skills
+                  </h2>
+
+                  <div class="mt-4 rounded-md bg-gray-50 p-4">
+                     <ul x-data="skillCategories" class="-my-2.5">
+                        <template x-for="item in skillCategories">
+                           <li
+                              class="flex gap-x-4 border-b py-2.5 last:border-b-0">
+                              <span
+                                 class="text-gray-600"
+                                 style="min-width: 5.5rem"
+                                 x-text="item.label"></span
+                              ><span x-text="item.value"></span>
+                           </li>
+                        </template>
+                     </ul>
+                  </div>
+               </div>
+               <!--// SKILLS -->
+
+               <!-- NAVIGATION -->
+               <nav x-data="{ tab: 'experience' }" class="sticky top-4 z-50 w-full space-y-4">
+                  <div class="no-print flex justify-between gap-x-1.5 rounded-xl bg-white p-1.5">
+                     <button
+                        @click="tab = 'experience'"
+                        :class="tab === 'experience' ? 'text-blue-600 bg-gray-50' : 'text-gray-600'"
+                        class="inline-flex w-full justify-center rounded-md px-4 py-2.5 font-medium duration-150 hover:bg-gray-50 hover:text-blue-600">
+                        Experience
+                     </button>
+                     <button
+                        @click="tab = 'projects'"
+                        :class="tab === 'projects' ? 'text-blue-600 bg-gray-50' : 'text-gray-600'"
+                        class="inline-flex w-full justify-center rounded-md px-4 py-2.5 font-medium duration-150 hover:bg-gray-50 hover:text-blue-600">
+                        Projects
+                     </button>
+                  </div>
+
+               <!-- CONTENT -->
+               <main class="space-y-4">
+                  <!-- EXPERIENCE -->
+                  <div x-show="tab === 'experience'" class="rounded-xl bg-white p-1.5">
+                     <h2
+                        class="flex items-center gap-x-2.5 px-4 pt-2.5 text-base font-medium before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-600">
+                        Experience
+                     </h2>
+
+                     <div x-data="jobsList" class="mt-4 space-y-1.5">
+                        <template x-for="job in jobsList">
+                           <div
+                              class="rounded-md bg-gray-50 p-4 duration-150 hover:bg-gray-100">
+                              <div>
+                                 <div class="w-full">
+                                    <div
+                                       class="flex flex-wrap items-center justify-between gap-y-2">
+                                       <h3
+                                          class="text-base font-medium"
+                                          x-text="job.company"></h3>
+                                       <span
+                                          class="inline-flex items-center rounded px-2 py-1 text-xs font-medium"
+                                          :class="job.period.includes('Present') ? 'text-blue-600' : 'bg-gray-200 text-gray-600'"
+                                          :style="job.period.includes('Present') ? 'background-color: #dbeafe' : ''"
+                                          x-text="job.type">
+                                       </span>
+                                    </div>
+
+                                    <div
+                                       class="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-2 text-gray-600">
+                                       <span
+                                          class="text-sm font-medium text-gray-900"
+                                          x-text="job.role"></span>
+
+                                       <div class="flex items-center gap-x-1.5">
+                                          <svg
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 24 24"
+                                             class="size-3.5">
+                                             <path
+                                                fill="currentColor"
+                                                d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z" />
+                                          </svg>
+                                          <span
+                                             class="text-xs font-medium"
+                                             x-text="job.period"></span>
+                                       </div>
+                                    </div>
+
+                                    <p
+                                       class="mt-4 max-w-lg text-gray-600"
+                                       x-text="job.description"></p>
+                                    <ul class="mt-2 max-w-lg space-y-1 text-gray-600" style="padding-left: 1.25rem; list-style-type: disc">
+                                       <template x-for="item in job.highlights">
+                                          <li x-text="item"></li>
+                                       </template>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </template>
+                     </div>
+                  </div>
+                  <!--// EXPERIENCE -->
+
+                  <!-- PROJECTS -->
+                  <div x-show="tab === 'projects'" class="rounded-xl bg-white p-1.5">
+                     <h2
+                        class="flex items-center gap-x-2.5 px-4 pt-2.5 text-base font-medium before:h-1.5 before:w-1.5 before:rounded-full before:bg-blue-600">
+                        Projects
+                     </h2>
+
+                     <div x-data="projectsList" class="mt-4 space-y-1.5">
+                        <template x-for="project in projectsList">
+                           <div
+                              class="rounded-md bg-gray-50 p-4 duration-150 hover:bg-gray-100">
+                              <div>
+                                 <div class="w-full">
+                                    <div class="flex items-center gap-x-2">
+                                       <h3
+                                          class="font-medium"
+                                          x-text="project.name"></h3>
+                                       <span
+                                          class="inline-flex items-center gap-x-1 rounded bg-gray-200 px-2 py-1 text-xs font-medium text-gray-600">
+                                          <svg
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 24 24"
+                                             class="size-3"
+                                             style="color: #eab308">
+                                             <path
+                                                fill="currentColor"
+                                                d="m12 18.26l-7.053 3.948l1.575-7.928L.588 8.792l8.027-.952L12 .5l3.385 7.34l8.027.952l-5.934 5.488l1.575 7.928z" />
+                                          </svg>
+                                          <span x-text="project.stars"></span>
+                                       </span>
+                                    </div>
+
+                                    <div
+                                       class="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-2 text-gray-600">
+                                       <div class="flex items-center gap-x-1.5">
+                                          <svg
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 24 24"
+                                             class="size-3.5">
+                                             <path
+                                                fill="currentColor"
+                                                d="M20 22h-2v-2a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v2H4v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5zm-8-9a6 6 0 1 1 0-12a6 6 0 0 1 0 12m0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8" />
+                                          </svg>
+                                          <span
+                                             class="text-xs font-medium"
+                                             x-text="project.role"></span>
+                                       </div>
+                                    </div>
+
+                                    <p
+                                       class="mt-4 max-w-lg text-gray-600"
+                                       x-text="project.description"></p>
+
+                                    <a
+                                       x-bind:href="project.website"
+                                       class="group mt-4 inline-flex items-center gap-x-2 text-blue-600"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                       <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          class="size-4">
+                                          <path
+                                             fill="currentColor"
+                                             d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm11-3v8h-2V6.413l-7.793 7.794l-1.414-1.414L17.585 5H13V3z" />
+                                       </svg>
+                                       <span
+                                          class="font-medium group-hover:underline group-hover:underline-offset-4"
+                                          x-text="project.website">
+                                       </span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </template>
+                     </div>
+                  </div>
+                  <!--// PROJECTS -->
+               </main>
+               <!--// CONTENT -->
+               </nav>
+               <!--// NAVIGATION -->
             </div>
+         </div>
 
-            <div class="details-container container-block">
-                <h2 class="container-block-title">Details</h2>
-                <ul class="list-unstyled">
-                    <li><strong>Location:</strong> Remote (Bali, ID)</li>
-                    <li><strong>Timezone:</strong> UTC+8</li>
-                    <li><strong>Experience:</strong> 8+ years</li>
-                    <li><strong>Education:</strong> BSc in Automation</li>
-                </ul>
-            </div>
+      </div>
 
-            <div class="skills-container container-block">
-                <h2 class="container-block-title">Skills</h2>
-                <div class="skill-category">
-                    <h6>Primary</h6>
-                    <p>Java, Kotlin, Spring, Hibernate, Apache Kafka, SQL, Redis</p>
-                </div>
-                <div class="skill-category">
-                    <h6>Infrastructure</h6>
-                    <p>Kubernetes, Docker, AWS, Linux</p>
-                </div>
-                <div class="skill-category">
-                    <h6>Frontend</h6>
-                    <p>TypeScript, React, Tailwind</p>
-                </div>
-                <div class="skill-category">
-                    <h6>Tooling</h6>
-                    <p>Gradle, Maven, GitHub Actions, Prometheus, Grafana</p>
-                </div>
-                <div class="skill-category">
-                    <h6>Other</h6>
-                    <p>PCI DSS, ISO 8583</p>
-                </div>
-            </div>
-
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>English <span class="lang-desc">(Fluent)</span></li>
-                    <li>Russian <span class="lang-desc">(Native)</span></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="main-wrapper">
-
-            <section class="section summary-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Career Profile</h2>
-                <div class="summary">
-                    <p>Senior backend engineer and open-source maintainer. Built kafka-ui (10k+ stars) and now maintain its successor Kafbat. 8 years delivering backend systems across fintech, payments, and distributed systems — currently consulting while running the Kafbat community.</p>
-                </div>
-            </section>
-
-            <section class="section experiences-section">
-                <h2 class="section-title">
-                    <span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>
-                    Work Experience
-                </h2>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Staff Engineer</h3>
-                            <div class="time">Jun 2025 - Present</div>
-                        </div>
-                        <div class="lower-row">
-                            <div class="company">Monetech Servicios, Full-time</div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <p>Backend engineer embedded across multiple teams at a Mexican fintech startup.</p>
-                        <ul>
-                            <li>Designed CONDUSEF-compliant installment loan calculators — regulatory logic that has to be correct in ways a compiler can't verify</li>
-                            <li>Architecture, ADR design, BRD analysis, external system integrations</li>
-                            <li>Cross-functional unblocking: QA, infra, ops, PMs, C-suite</li>
-                            <li>Observability, metrics, and technical guidance across the team</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Co-Founder &middot; Code &amp; Ops</h3>
-                            <div class="time">Mar 2024 - Present</div>
-                        </div>
-                        <div class="lower-row">
-                            <div class="company">Kafbat, Open Source</div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <p>Forked kafka-ui as an independent community project. Now the primary maintained successor with 2k+ stars.</p>
-                        <ul>
-                            <li>Product direction, architecture, community management</li>
-                            <li>Supporting a paying user base on an open-source model</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Java Developer</h3>
-                            <div class="time">Apr 2024 - Jun 2025</div>
-                        </div>
-                        <div class="lower-row">
-                            <div class="company">Consulting, Contract</div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <p>Built high-load video streaming and metadata platform.</p>
-                        <ul>
-                            <li>Java, Spring, Kafka, Flux, JOOQ</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Engineering Lead &amp; Core Maintainer</h3>
-                            <div class="time">Jul 2021 - Sep 2023</div>
-                        </div>
-                        <div class="lower-row">
-                            <div class="company">Provectus, Full-time</div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <p>Led technical direction of kafka-ui, the leading open-source Kafka management tool. Grew it to 10k+ GitHub stars.</p>
-                        <ul>
-                            <li>Product and technical leadership for a geographically dispersed team</li>
-                            <li>Community management: GitHub, end-user support, OSS community</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Java Fullstack Developer</h3>
-                            <div class="time">Mar 2018 - Jul 2021</div>
-                        </div>
-                        <div class="lower-row">
-                            <div class="company">BPC Banking Technologies, Full-time</div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <p>Built high-load payment and e-commerce systems for financial institutions worldwide.</p>
-                        <ul>
-                            <li>Full project lifecycle for Moscow's largest public transport app and a major bank's payment aggregator</li>
-                            <li>Bulk recurring card payment processing</li>
-                            <li>Core contributor to the country's largest payment processing gateway</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Open Source</h3>
-                            <div class="time">2013 - 2015</div>
-                        </div>
-                        <div class="lower-row">
-                            <div class="company">Independent, Freelance</div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <p>Contributed to various open-source initiatives within the Minecraft server-side development ecosystem.</p>
-                        <ul>
-                            <li>Contributions to Essentials, LWC, Griswold, AdminCMD, Bukkit-SSHD</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projects</h2>
-                <div class="intro">
-                    <p>I take pride in my open-source projects, whether as the creator or a contributor. Please check them out!</p>
-                </div>
-                <div class="item">
-                    <div class="project-title">
-                        <a href="https://github.com/kafbat/kafka-ui" target="_blank">Kafbat UI</a>
-                        <span class="star"><span class="star-symbol">&#9733;</span> <span>2k</span></span>
-                    </div>
-                    <span class="project-tagline">
-                        Versatile, fast and lightweight web UI for managing Apache Kafka clusters. Built by developers, for developers.
-                        Technical lead, core contributor, maintainer.
-                    </span>
-                </div>
-                <div class="item">
-                    <div class="project-title">
-                        <a href="https://github.com/provectus/kafka-ui" target="_blank">UI for Apache Kafka</a>
-                        <span class="star"><span class="star-symbol">&#9733;</span> <span>10k</span></span>
-                    </div>
-                    <span class="project-tagline">
-                        Versatile, fast and lightweight web UI for managing Apache Kafka clusters. Built by developers, for developers.
-                        Technical lead, core contributor, maintainer.
-                    </span>
-                </div>
-                <div class="item">
-                    <div class="project-title">
-                        <a href="https://github.com/opendatadiscovery/odd-platform" target="_blank">OpenDataDiscovery Platform</a>
-                        <span class="star"><span class="star-symbol">&#9733;</span> <span>1k</span></span>
-                    </div>
-                    <span class="project-tagline">
-                        First open-source data discovery and observability platform.
-                        Occasional contributions.
-                    </span>
-                </div>
-                <div class="item">
-                    <div class="project-title">
-                        <a href="https://github.com/spring-projects" target="_blank">Spring Framework</a>
-                        <span class="star"><span class="star-symbol">&#9733;</span> <span>40k</span></span>
-                    </div>
-                    <span class="project-tagline">
-                        Minor contributions to spring-security, spring-boot, spring-ldap.
-                    </span>
-                </div>
-            </section>
-
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div>
-        <div class="text-center">
-            <small class="copyright">Major edits by yours truly :-)</small>
-        </div>
-    </footer>
-
-</body>
+      <script src="assets/js/data.js"></script>
+   </body>
 </html>
